@@ -1,7 +1,7 @@
 package ru.job4j.puzzle;
 
 public class Win {
-    public static boolean check_row(int[][] board, int row) {
+    public static boolean checkRow(int[][] board, int row) {
         boolean rsl = true;
         for (int i = 0; i < board[row].length; i++) {
             if (board[row][i] != 1) {
@@ -12,7 +12,7 @@ public class Win {
         return rsl;
     }
 
-    public static boolean check_clm(int[][] board, int clm) {
+    public static boolean checkClm(int[][] board, int clm) {
         boolean rsl = true;
         for (int i = 0; i < board.length; i++) {
             if (board[i][clm] != 1) {
@@ -26,7 +26,7 @@ public class Win {
     public static boolean check(int[][] board) {
         boolean rsl = false;
         for (int i = 0; i < board.length; i++) {
-            if (board[i][i] == 1 && (check_row(board, i) || check_clm(board, i))) {
+            if (board[i][i] == 1 && (checkRow(board, i) || checkClm(board, i))) {
                 rsl = true;
                 break;
             }
