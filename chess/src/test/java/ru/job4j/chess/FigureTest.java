@@ -10,7 +10,6 @@ import ru.job4j.chess.firuges.black.BishopBlack;
 import ru.job4j.chess.firuges.Cell;
 
 public class FigureTest {
-    public FigureTest(){}
 
     @Test
     public void bishopBlackPositionA1() {
